@@ -1,4 +1,4 @@
-### Syntax highliht
+### Syntax highlight
 ![image](./assets/screenshots/1.png)
 
 ### Hover tooltips
