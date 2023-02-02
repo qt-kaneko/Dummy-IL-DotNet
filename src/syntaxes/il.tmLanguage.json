@@ -1,0 +1,72 @@
+{
+  "name": "IL",
+  "scopeName": "source.il",
+  "patterns": [
+    {
+      "name": "keyword.other.declaration",
+      "match": "(?<=^|\\W|\\s)(.vtfixup|.subsystem|.mresource|.module extern|.module|.method|.file|.field|.data|.custom|.corflags|.class extern|.class|.assembly extern|.assembly)(?=\\s|\\W|$)"
+    },
+    {
+      "name": "keyword.other.attribute.visibility-and-accessibility",
+      "match": "(?<=^|\\W|\\s)(nested assembly|nested famandassem|nested family|nested famorassem|nested public|nested private|public|private|static)(?=\\s|\\W|$)"
+    },
+    {
+      "name": "keyword.other.attribute.type-layout",
+      "match": "(?<=^|\\W|\\s)(auto|explicit|sequential)(?=\\s|\\W|$)"
+    },
+    {
+      "name": "keyword.other.attribute.inheritance",
+      "match": "(?<=^|\\W|\\s)(abstract|sealed)(?=\\s|\\W|$)"
+    },
+    {
+      "name": "keyword.other.attribute.interoperation",
+      "match": "(?<=^|\\W|\\s)(ansi|autochar|unicode)(?=\\s|\\W|$)"
+    },
+    {
+      "name": "keyword.other.attribute.special-handling",
+      "match": "(?<=^|\\W|\\s)(beforefieldinit|rtspecialname|serializable|specialname)(?=\\s|\\W|$)"
+    },
+    {
+      "name": "keyword.other.attribute.type-semantics",
+      "match": "(?<=^|\\W|\\s)(interface)(?=\\s|\\W|$)"
+    },
+    {
+      "name": "keyword.other.attribute",
+      "match": "(?<=^|\\W|\\s)(unicode|specialname|serializable|sequential|sealed|rtspecialname|nested public|nested private|public|private|nested famorassem|nested family|nested famandassem|nested assembly|interface|explicit|beforefieldinit|autochar|auto|ansi|abstract)(?=\\s|\\W|$)"
+    },
+    {
+      "name": "keyword.other.type",
+      "match": "(?<=^|\\W|\\s)(unsigned int64|unsigned int32|unsigned int16|unsigned int8|typedref|native unsigned int|native int|int64|int32|int16|int8|float64|float32|string|object|char|bool|void)(?=\\s|\\W|$)"
+    },
+    {
+      "name": "keyword.other.instruction",
+      "match": "(?<=^|\\W|\\s)(xor|volatile\\.|unbox\\.any|unbox|unaligned\\.|throw|tail\\.|switch|sub\\.ovf\\.un|sub\\.ovf|sub|stsfld|stobj|stloc\\.s|stloc\\.3|stloc\\.2|stloc\\.1|stloc\\.0|stloc|stind\\.ref|stind\\.r8|stind\\.r4|stind\\.i8|stind\\.i4|stind\\.i2|stind\\.i1|stind\\.i|stfld|stelem\\.ref|stelem\\.r8|stelem\\.r4|stelem\\.i8|stelem\\.i4|stelem\\.i2|stelem\\.i1|stelem\\.i|stelem|starg\\.s|starg|sizeof|shr\\.un|shr|shl|rethrow|ret|rem\\.un|rem|refanyval|refanytype|readonly\\.|pop|or|not|nop|newobj|newarr|neg|mul\\.ovf\\.un|mul\\.ovf|mul|mkrefany|localloc|leave\\.s|leave|ldvirtftn|ldtoken|ldstr|ldsflda|ldsfld|ldobj|ldnull|ldloca\\.s|ldloca|ldloc\\.s|ldloc\\.3|ldloc\\.2|ldloc\\.1|ldloc\\.0|ldloc|ldlen|ldind\\.u8|ldind\\.u4|ldind\\.u2|ldind\\.u1|ldind\\.ref|ldind\\.r8|ldind\\.r4|ldind\\.i8|ldind\\.i4|ldind\\.i2|ldind\\.i1|ldind\\.i|ldftn|ldflda|ldfld|ldelema|ldelem\\.u8|ldelem\\.u4|ldelem\\.u2|ldelem\\.u1|ldelem\\.ref|ldelem\\.r8|ldelem\\.r4|ldelem\\.i8|ldelem\\.i4|ldelem\\.i2|ldelem\\.i1|ldelem\\.i|ldelem|ldc\\.r8|ldc\\.r4|ldc\\.i8|ldc\\.i4\\.s|ldc\\.i4\\.M1|ldc\\.i4\\.m1|ldc\\.i4\\.8|ldc\\.i4\\.7|ldc\\.i4\\.6|ldc\\.i4\\.5|ldc\\.i4\\.4|ldc\\.i4\\.3|ldc\\.i4\\.2|ldc\\.i4\\.1|ldc\\.i4\\.0|ldc\\.i4|ldarga\\.s|ldarga|ldarg\\.s|ldarg\\.3|ldarg\\.2|ldarg\\.1|ldarg\\.0|ldarg|jmp|isinst|initobj|initblk|endfinally|endfilter|endfault|dup|div\\.un|div|cpobj|cpblk|conv\\.u8|conv\\.u4|conv\\.u2|conv\\.u1|conv\\.u|conv\\.r8|conv\\.r4|conv\\.r\\.un|conv\\.ovf\\.u8\\.un|conv\\.ovf\\.u8|conv\\.ovf\\.u4\\.un|conv\\.ovf\\.u4|conv\\.ovf\\.u2\\.un|conv\\.ovf\\.u2|conv\\.ovf\\.u1\\.un|conv\\.ovf\\.u1|conv\\.ovf\\.u\\.un|conv\\.ovf\\.u|conv\\.ovf\\.i8\\.un|conv\\.ovf\\.i8|conv\\.ovf\\.i4\\.un|conv\\.ovf\\.i4|conv\\.ovf\\.i2\\.un|conv\\.ovf\\.i2|conv\\.ovf\\.i1\\.un|conv\\.ovf\\.i1|conv\\.ovf\\.i\\.un|conv\\.ovf\\.i|conv\\.i8|conv\\.i4|conv\\.i2|conv\\.i1|conv\\.i|constrained\\.|clt\\.un|clt|ckfinite|cgt\\.un|cgt|ceq|castclass|callvirt|calli|call|brzero\\.s|brzero|brtrue\\.s|brtrue|brnull\\.s|brnull|brinst\\.s|brinst|brfalse\\.s|brfalse|break|br\\.s|br|box|bne\\.un\\.s|bne\\.un|blt\\.un\\.s|blt\\.un|blt\\.s|blt|ble\\.un\\.s|ble\\.un|ble\\.s|ble|bgt\\.un\\.s|bgt\\.un|bgt\\.s|bgt|bge\\.un\\.s|bge\\.un|bge\\.s|bge|beq\\.s|beq|arglist|and|add\\.ovf\\.un|add\\.ovf|add)(?=\\s|\\W|$)"
+    },
+    {
+      "name": "keyword.other.directive",
+      "match": "(?<=^|\\W|\\s)(.emitbyte|.param type|.param|.override method|.override|.maxstack|.locals( init)?|.entrypoint|.emitbyte|.data|.custom)(?=\\s|\\W|$)"
+    },
+    {
+      "name": "string.quoted.double",
+      "begin": "\\\"",
+      "end": "\\\""
+    },
+    {
+      "name": "comment.line.double-slash",
+      "match": "//.*"
+    },
+    {
+      "name": "comment.block",
+      "begin": "/\\*",
+      "end": "\\*/"
+    },
+    {
+      "name": "constant.numeric",
+      "match": "(?<=^|\\W|\\s)[0-9]+(?=\\s|\\W|$)"
+    },
+    {
+      "name": "entity.name.variable",
+      "match": "(?<=^|\\W|\\s)'.+'(?=\\s|\\W|$)"
+    }
+  ]
+}

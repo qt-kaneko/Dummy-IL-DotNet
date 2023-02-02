@@ -1,0 +1,45 @@
+{
+  "name": "dummy-il-dotnet",
+  "displayName": "Dummy IL .NET",
+  "version": "1.0.0",
+  "publisher": "qt-kaneko",
+  "description": "Dummy .NET Common Intermediate Language support for VSCode.",
+  "author": "Kaneko Qt",
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "icon": "icon.png",
+  "engines": {"vscode": "^1.74.0"},
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qt-kaneko/Dummy-IL-DotNet.git"
+  },
+  "homepage": "https://github.com/qt-kaneko/Dummy-IL-DotNet",
+  "keywords": [
+    "il",
+    "cil",
+    "msil"
+  ],
+  "preview": true,
+  "activationEvents": ["*"],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "il",
+        "aliases": ["IL"],
+        "extensions": [".il"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "il",
+        "scopeName": "source.il",
+        "path": "./syntaxes/il.tmLanguage.json"
+      }
+    ]
+  }
+}
